@@ -1,3 +1,5 @@
+/*
+
 // Переменные
 
 // Работаем в новом режиме (строгий режим)
@@ -45,3 +47,27 @@ let arr = ['plum.png', 'orange.png', 'apple.bmp', 6, {}, []];
 
 // Обращение к значению массива
 console.log(arr[0]);
+
+*/
+
+// Практика
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+   count: numberOfFilms,
+   movies: {},
+   actors: {},
+   genres: [],
+   privat: false
+};
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
